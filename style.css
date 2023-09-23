@@ -11,12 +11,6 @@ body{
     line-height: 1.5;
 }
 
-a{
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-}
-
 #nav-bar {
     position: fixed;
     min-width: 290px;
@@ -85,4 +79,47 @@ code {
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
+}
+footer p{
+    text-align: center;
+}
+footer p a{
+    font-size: 16px;
+    /* display: block; */
+    /* padding: 10px 30px; */
+    color: #4d4e53;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+@media (max-width: 1990px){
+    .main-section header{
+        font-size: 25px;
+    }
+    #nav-bar header{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 815px){
+#nav-bar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+}
+#nav-bar ul {
+    border: 1px solid;
+    height: 207px;
+}
+.main-section {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+}
 }
